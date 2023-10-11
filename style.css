@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body{
+    font-family:'VT323', monospace;
+
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+
+    /*scroling*/
+    overflow-x: hidden;
+
+    background-color: #f3b6b6;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* set the container style */
+.container {
+
+    /* set width of the container */
+    width: 91%;
+    max-width: 680px;
+    margin: 10px;
+    padding: 50px 0px 100px 0px;
+
+    /* mengatur tata letak element dengan flexbox */
+    /* posisi Element: tengah */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* set the profile image */
+.img-container img {
+    width: 150px;
+    border-radius: 150%;
+}
+
+/* set the title and description */
+.title-container {
+    /* tata letak */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+
+    /* warna text heading dan deskripsi */
+    color: antiquewhite;
+}
+
+/* set the link item element */
+.link-item {
+    width: 70%;
+    height: 56px;
+    margin: 16px;
+    border-radius: 20px;
+
+    /* text color and background color */
+    color: black;
+    text-decoration: none;
+    background-color: #bc7973;
+
+    /* tata letak */
+    display: flex;
+    justify-content: space-between;
+}
+
+/* set the icons */
+.icon {
+    margin: 6px 8px;
+    width: 40px;
+    height: 40px;
+}
+
+/* coba ke tengahin dikit hhe */
+.link-item p {
+    margin-right: 60px;
+}
+
+.link-item:hover{
+    transition: cubic-bezier(.07, 1.41, .82, 1.41) 0.2s;
+    transform: scale(1.02);
+
+    background-color: antiquewhite;
+}
+
